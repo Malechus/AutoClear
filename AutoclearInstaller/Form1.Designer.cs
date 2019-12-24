@@ -75,7 +75,7 @@
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.outputBox);
             this.Name = "Form1";
-            this.Text = "AutoClear";
+            this.Text = "AutoClear v0.1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
