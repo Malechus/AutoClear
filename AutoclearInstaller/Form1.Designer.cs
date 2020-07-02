@@ -31,6 +31,10 @@
             this.outputBox = new System.Windows.Forms.RichTextBox();
             this.cancelButton = new System.Windows.Forms.Button();
             this.agreeButton = new System.Windows.Forms.Button();
+            this.documentsCheck = new System.Windows.Forms.CheckBox();
+            this.downloadsCheck = new System.Windows.Forms.CheckBox();
+            this.picturesCheck = new System.Windows.Forms.CheckBox();
+            this.recycleBin = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // outputBox
@@ -42,7 +46,7 @@
             this.outputBox.Name = "outputBox";
             this.outputBox.ReadOnly = true;
             this.outputBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.outputBox.Size = new System.Drawing.Size(530, 600);
+            this.outputBox.Size = new System.Drawing.Size(430, 600);
             this.outputBox.TabIndex = 0;
             this.outputBox.Text = "";
             // 
@@ -66,18 +70,63 @@
             this.agreeButton.UseVisualStyleBackColor = true;
             this.agreeButton.Click += new System.EventHandler(this.agreeButton_Click);
             // 
+            // documentsCheck
+            // 
+            this.documentsCheck.AutoSize = true;
+            this.documentsCheck.Location = new System.Drawing.Point(445, 13);
+            this.documentsCheck.Name = "documentsCheck";
+            this.documentsCheck.Size = new System.Drawing.Size(143, 21);
+            this.documentsCheck.TabIndex = 3;
+            this.documentsCheck.Text = "TEMP Documents";
+            this.documentsCheck.UseVisualStyleBackColor = true;
+            // 
+            // downloadsCheck
+            // 
+            this.downloadsCheck.AutoSize = true;
+            this.downloadsCheck.Location = new System.Drawing.Point(445, 41);
+            this.downloadsCheck.Name = "downloadsCheck";
+            this.downloadsCheck.Size = new System.Drawing.Size(141, 21);
+            this.downloadsCheck.TabIndex = 4;
+            this.downloadsCheck.Text = "TEMP Downloads";
+            this.downloadsCheck.UseVisualStyleBackColor = true;
+            // 
+            // picturesCheck
+            // 
+            this.picturesCheck.AutoSize = true;
+            this.picturesCheck.Location = new System.Drawing.Point(445, 69);
+            this.picturesCheck.Name = "picturesCheck";
+            this.picturesCheck.Size = new System.Drawing.Size(123, 21);
+            this.picturesCheck.TabIndex = 5;
+            this.picturesCheck.Text = "TEMP Pictures";
+            this.picturesCheck.UseVisualStyleBackColor = true;
+            // 
+            // recycleBin
+            // 
+            this.recycleBin.AutoSize = true;
+            this.recycleBin.Location = new System.Drawing.Point(445, 97);
+            this.recycleBin.Name = "recycleBin";
+            this.recycleBin.Size = new System.Drawing.Size(147, 21);
+            this.recycleBin.TabIndex = 6;
+            this.recycleBin.Text = "Empty Recycle Bin";
+            this.recycleBin.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(532, 653);
+            this.ClientSize = new System.Drawing.Size(632, 653);
+            this.Controls.Add(this.recycleBin);
+            this.Controls.Add(this.picturesCheck);
+            this.Controls.Add(this.downloadsCheck);
+            this.Controls.Add(this.documentsCheck);
             this.Controls.Add(this.agreeButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.outputBox);
             this.Name = "Form1";
-            this.Text = "AutoClear v0.1";
+            this.Text = "AutoClear v0.2";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -86,6 +135,10 @@
         private System.Windows.Forms.RichTextBox outputBox;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Button agreeButton;
+        private System.Windows.Forms.CheckBox documentsCheck;
+        private System.Windows.Forms.CheckBox downloadsCheck;
+        private System.Windows.Forms.CheckBox picturesCheck;
+        private System.Windows.Forms.CheckBox recycleBin;
     }
 }
 
