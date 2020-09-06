@@ -85,6 +85,7 @@ namespace AutoclearInstaller
 
                 outputBox.AppendText("Finalizing AutoClear.");
                 autoclear.WriteLine(@"rem this file was created by the autoclear installer. See https://github.com/Malechus/AutoClear for more information.");
+                autoclear.WriteLine(@"rem the license for this software is posted at https://github.com/Malechus/AutoClear/blob/master/LICENSE");
                 autoclear.WriteLine("exit");
                 autoclear.Close();
             }
